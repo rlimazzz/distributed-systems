@@ -15,11 +15,15 @@ def maiuscula(texto):
 def inverter(texto):
     return texto[::-1]
 
+def contar_palavras(texto):
+    return str(len(texto.split()))
+
 FUNCOES = {
     'SOMA': soma,
     'SUB': subtracao,
     'MAIUSCULA': maiuscula,
     'INVERTER': inverter,
+    'PALAVRAS': contar_palavras,
 }
 
 def processar_comando(comando):
